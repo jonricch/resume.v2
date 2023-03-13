@@ -37,74 +37,74 @@ $(document).ready(function () {
 
 // EMAILJS
 
-function validate(event) {
-  event.preventDefault();
-  const firstName = document.querySelector(".firstname").value;
-  const lastName = document.querySelector(".lastname").value;
-  const email = document.querySelector(".email").value;
-  const message = document.querySelector(".message").value;
-  const company = document.querySelector(".company").value;
+// function validate(event) {
+//   event.preventDefault();
+//   const firstName = document.querySelector(".firstname").value;
+//   const lastName = document.querySelector(".lastname").value;
+//   const email = document.querySelector(".email").value;
+//   const message = document.querySelector(".message").value;
+//   const company = document.querySelector(".company").value;
 
-  if (
-    firstName === "" ||
-    lastName === "" ||
-    email === "" ||
-    company === "" ||
-    message === ""
-  ) {
-    inputEmpty();
-  } else {
-    const name = `${firstName} ${lastName}`;
-    sendMail(name, email, company, message);
-  }
-}
+//   if (
+//     firstName === "" ||
+//     lastName === "" ||
+//     email === "" ||
+//     company === "" ||
+//     message === ""
+//   ) {
+//     inputEmpty();
+//   } else {
+//     const name = `${firstName} ${lastName}`;
+//     sendMail(name, email, company, message);
+//   }
+// }
 
-document.querySelector("#contact-form").addEventListener("submit", validate);
+// document.querySelector("#contact-form").addEventListener("submit", validate);
 
-function success() {
-  swal({
-    title: "Good job!",
-    text: "You successfully sent a message",
-    icon: "success",
-    button: "OK",
-  });
-}
+// function success() {
+//   swal({
+//     title: "Good job!",
+//     text: "You successfully sent a message",
+//     icon: "success",
+//     button: "OK",
+//   });
+// }
 
-function error() {
-  swal({
-    title: "Oops!",
-    text: "Something went wrong, message could not be sent!",
-    icon: "error",
-    button: "OK",
-  });
-}
+// function error() {
+//   swal({
+//     title: "Oops!",
+//     text: "Something went wrong, message could not be sent!",
+//     icon: "error",
+//     button: "OK",
+//   });
+// }
 
-function inputEmpty() {
-  swal({
-    title: "Oops!",
-    text: "All input fields are required!",
-    icon: "error",
-    button: "OK",
-  });
-}
+// function inputEmpty() {
+//   swal({
+//     title: "Oops!",
+//     text: "All input fields are required!",
+//     icon: "error",
+//     button: "OK",
+//   });
+// }
 
-function sendMail(name, email, message, company) {
-  fetch("http://localhost:4000/send-email", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      to: email,
-      subject: "Congrats! You've got a new message!",
-      name: name,
-      email: email,
-      company: company,
-      message: message,
-    }),
-  })
-    .then(() => {
-      success();
-    })
-    .catch(() => {
-      error();
-    });
-}
+// function sendMail(name, email, message, company) {
+//   fetch("http://localhost:4000/send-email", {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify({
+//       to: email,
+//       subject: "Congrats! You've got a new message!",
+//       name: name,
+//       email: email,
+//       company: company,
+//       message: message,
+//     }),
+//   })
+//     .then(() => {
+//       success();
+//     })
+//     .catch(() => {
+//       error();
+//     });
+// }

@@ -1,0 +1,49 @@
+{
+  "name": "onlineresume",
+  "version": "1.0.0",
+  "description": "Online resume using bootstrap and sass",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "\u001aBootstrap",
+    "sass",
+    "node.js"
+  ],
+  "author": "Jon Rich",
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@fortawesome/fontawesome-free": "^6.3.0",
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.3.0-alpha1",
+    "cors": "^2.8.5",
+    "dart-sass": "^1.25.0",
+    "emailjs-com": "^3.2.0",
+    "nodemailer": "^6.9.1",
+    "postcss-cli": "^10.1.0",
+    "sweetalert": "^2.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "emailjs": "^4.0.1",
+    "express": "^4.18.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.21",
+    "sass": "^1.58.3",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

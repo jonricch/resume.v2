@@ -65,7 +65,7 @@
               <a class="nav-link" href="#contact">contact</a>
             </li>
           </ul>
-          <a href="https://call.whatsapp.com/video/1m8BpsEW9p8at1bKQbniEs">
+          <a href="https://call.whatsapp.com/video/1m8BpsEW9p8at1bKQbniEs" target="_blank">
           <button type="button" class="rounded-pill btn-rounded">
             +639 763 086 731
             <span>
@@ -183,7 +183,7 @@
           <div class="col-md-6 border-right">
             <div class="bg-white p-3">
               <h2 class="fw-bold text-capitalize text-center">
-                Our Services Range From Iniital Design To Deployment Anywhere Anytime
+                Our Services Range From Initial Design To Deployment Anywhere Anytime
               </h2>
             </div>
           </div>
@@ -509,6 +509,37 @@
             </div>
           </div>
         </div>
+
+           <div class="col-lg-4 col-md-6  filter first-projects">
+          <div class="item-2 portfolio-box shadow" data-filter="first-proects">
+             <a href="https://jonricch.github.io/registration-form/" class="thumbnail fancybox" rel="ligthbox" target="_blank">
+            <img src="images/portfolio/registartion-form.png" alt="porfolio 2 image" title="porfolio 2 picture" class="img-fluid" data-category="first-projects">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Registration Form</h4>
+                <p>First Projects</p>
+              </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+            <div class="col-lg-4 col-md-6  filter first-projects">
+          <div class="item-2 portfolio-box shadow" data-filter="first-proects">
+             <a href="https://jonricch.github.io/simple-quiz/" class="thumbnail fancybox" rel="ligthbox" target="_blank">
+            <img src="images/portfolio/simple-quiz.png" alt="porfolio 2 image" title="porfolio 2 picture" class="img-fluid" data-category="first-projects">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Simple Quiz</h4>
+                <p>First Projects</p>
+              </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
         <div class="item-3 col-lg-4 col-md-6  filter certificates">
           <div class="item-3 portfolio-box shadow">
             <a href="images/certificates/certificate-1.png" class="thumbnail fancybox" rel="ligthbox"  data-fancybox="gallery" target="_blank">
@@ -742,22 +773,22 @@
             <h3 class="display-3--brief">What will be the next step?</h3>
             <ul class="cta-info__list">
               <li>We'll prepare the data</li>
-              <li>we'll discuss it together</li>
-              <li>let's start the discussion</li>
+              <li>We'll discuss it together</li>
+              <li>Let's start the discussion</li>
             </ul>
           </div>
         </div>
         <div class="col-12 col-lg-6 shadow p-3">
           <div class="form w-100 pb-2">
             <h4 class="display-3--title mb-5">start your project</h4>
-            <form class="row contact-form" id="contact-form" method="post">
-              <div class="col-lg-6 col-md-6 mb-3"><input type="text" placeholder="First Name" id="inputFirstName" class="shadow form-control form-control-lg firstname"></div>
-              <div class="col-lg-6 col-md-6 mb-3"><input type="text" placeholder="Last Name" id="inputLastName" class="shadow form-control form-control-lg lastname"></div>
-              <div class="col-lg-12 mb-3"><input type="text" placeholder="Company" id="inputCompany" class="shadow form-control form-control-lg company"></div>
-              <div class="col-lg-12 mb-3"><input type="email" placeholder="email address" id="inputEmail" class="shadow form-control form-control-lg email"></div>
+            <form class="row contact-form" id="contact-form" action="mailto:jonricch.office@gmail.com" method="post" enctype="text/plain">
+              <div class="col-lg-6 col-md-6 mb-3"><input type="text" placeholder="First Name" id="inputFirstName" class="shadow form-control form-control-lg firstname" name="First Name"></div>
+              <div class="col-lg-6 col-md-6 mb-3"><input type="text" placeholder="Last Name" id="inputLastName" class="shadow form-control form-control-lg lastname" name="Last Name"></div>
+              <div class="col-lg-12 mb-3"><input type="text" placeholder="Company" id="inputCompany" class="shadow form-control form-control-lg company" name="Company"></div>
+              <div class="col-lg-12 mb-3"><input type="email" placeholder="email address" id="inputEmail" class="shadow form-control form-control-lg email" name="Email"></div>
               <div class="col-lg-12 mb-3"><textarea name="message" placeholder="message" id="message"  rows="8" class="shadow form-control form-control-lg message"></textarea></div>
             <div class="text-center d-grid mt-1">
-              <input type="submit" class="btn btn-primary rounded-pill pt-3 pb-3 submit" name="submit" id="contact-submit" data-submit="...Sending" onsubmit="sendMail()">
+              <input type="submit" class="btn btn-primary rounded-pill pt-3 pb-3 submit" id="contact-submit">
                 submit
                 <i class="fas fa-paper-plane"></i>
             </input>
@@ -921,7 +952,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/sweetalert/dist/sweetalert.min.js"></script>
      <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
